@@ -10,9 +10,10 @@
 ```objective-c
 // 和AVAssetExportSession 一样通过 AVURLAsset 创建 GGAVAssetExportSession
 GGAVAssetExportSession *exportSession = [[GGAVAssetExportSession alloc]  initWithAVAsset:videoAsset];
+
 // 导出api也沿用 AVAssetExportSession 直接使用 exportAsynchronouslyWithCompletionHandler
 [exportSession exportAsynchronouslyWithCompletionHandler:^(BOOL isSuccessCompress, NSError * _Nullable error) {
-		// 导出后操作
+     // 导出后操作
 }];
 ```
 
